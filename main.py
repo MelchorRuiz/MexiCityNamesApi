@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from typing import Union
 from pydantic import BaseModel
 import sqlite3
+import uvicorn
+import os
 
 app = FastAPI(title="MexiCityNamesApi",
               description="Retrieve cities sorted by their state, Create by: Melchor Ruiz",
@@ -53,3 +55,6 @@ def get_cities(id_state: Union[int, None] = None):
     conn.close()
     return cities
 
+if (__name__ == "__main__"):
+    PORT = os.getenv("PORT", 8000)
+    uvicorn.run("main:app", port=PORT, reload=True)
