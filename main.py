@@ -60,4 +60,5 @@ def get_cities(id_state: Union[int, None] = None):
 
 if (__name__ == "__main__"):
     PORT = int(os.getenv("PORT", "8000"))
-    uvicorn.run("main:app", port=PORT, log_level="info", host='0.0.0.0')
+    HOST = os.getenv("HOST", "localhost")
+    uvicorn.run("main:app", port=PORT, log_level="info", host=HOST)
