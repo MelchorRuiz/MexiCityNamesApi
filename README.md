@@ -14,7 +14,7 @@
 
 ```
 git clone https://github.com/MelchorRuiz/MexiCityNamesApi
-cd <repository_name>
+cd MexiCityNamesApi
 ```
 
 <p>2. Create a virtual environment:</p>
