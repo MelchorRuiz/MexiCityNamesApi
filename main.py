@@ -7,6 +7,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+PORT = int(os.getenv("PORT", "8000"))
+HOST = os.getenv("HOST", "localhost")
 
 app = FastAPI(title="MexiCityNamesApi",
               description="Retrieve cities sorted by their state, Create by: Melchor Ruiz",
@@ -38,7 +40,7 @@ def get_states():
     conn.close()
     return states
 
-@app.get("/citys", response_model=list[city], tags=["Cities from Mexico"])
+@app.get("/cities", response_model=list[city], tags=["Cities from Mexico"])
 def get_cities(id_state: Union[int, None] = None):
     cities = []
     
@@ -59,6 +61,4 @@ def get_cities(id_state: Union[int, None] = None):
     return cities
 
 if (__name__ == "__main__"):
-    PORT = int(os.getenv("PORT", "8000"))
-    HOST = os.getenv("HOST", "localhost")
     uvicorn.run("main:app", port=PORT, log_level="info", host=HOST)
