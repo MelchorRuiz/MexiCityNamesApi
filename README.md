@@ -4,7 +4,7 @@
 
 <p id="description">This project aims to provide a RESTful API that enables users to retrieve comprehensive data about states and cities in Mexico. The API offers endpoints to fetch all states all cities across Mexico and cities within a specific state.</p>
 
-<h2>🚀 Demo</h2>
+<h2>📕 Documentation</h2>
 
 [https://mexicitynamesapi.onrender.com/docs](https://mexicitynamesapi.onrender.com/docs)
 
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 <p>4. Run the main application (main.app):</p>
 
 ```
-python main.app
+python main.py
 ```
 
   
