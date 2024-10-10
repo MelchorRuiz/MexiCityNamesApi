@@ -6,7 +6,8 @@
 
 <h2>📕 Documentation</h2>
 
-[https://loose-adriana-mexicitynamesapi-3eca7e75.koyeb.app/docs](https://loose-adriana-mexicitynamesapi-3eca7e75.koyeb.app/docs)
+- [https://mexicitynamesapi.onrender.com/docs](https://mexicitynamesapi.onrender.com/docs)
+- [https://mexicitynamesapi.onrender.com/redoc](https://mexicitynamesapi.onrender.com/redoc)
 
 <h2>🛠️ Installation Steps:</h2>
 
